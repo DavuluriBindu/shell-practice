@@ -4,7 +4,7 @@ b=5
 
 if [ $a -lt $b ]
 then
-    echo print $a is less than $b 
+    echo "print $a is less than $b" 
 else
-    echo $a is greater than $b
+    echo "$a is greater than $b"
 fi
