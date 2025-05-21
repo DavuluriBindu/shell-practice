@@ -1,10 +1,14 @@
 #!/bin/bash
 
 userid=$(id -u)
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0m"
 
 if [ $userid -ne 0 ]
 then 
-     echo "error:: please run the script with root user"
+     echo -e"$R error:: please run the script with root user $N"
      exit 1
 else
     echo "you are running with root user"
@@ -12,9 +16,9 @@ fi
 VALIDATE(){
     if [ $1 -eq 0 ]
     then
-        echo "installing $2 is ... success"
+        echo -e" installing $2 is ... $G success $N"
     else 
-        echo "installing $2 is ...not success"
+        echo -e "installing $2 is ... $R not success $N"
     fi
 }
 dnf list installed mysql
