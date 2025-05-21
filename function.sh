@@ -10,7 +10,7 @@ else
     echo "you are running with root user"
 fi
 VALIDATE(){
-    if [ $? -eq 0 ]
+    if [ $1 -eq 0 ]
     then
         echo "installing $2 is ... success"
     else 
