@@ -1,5 +1,5 @@
 #!/bin/bash
-a=10
+a=$1
 
 
 if [ $a -lt 10 ]
