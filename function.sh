@@ -8,7 +8,7 @@ N="\e[0m"
 
 if [ $userid -ne 0 ]
 then 
-     echo -e"$R error:: please run the script with root user $N"
+     echo -e "$R error:: please run the script with root user $N"
      exit 1
 else
     echo "you are running with root user"
