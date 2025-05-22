@@ -1,10 +1,10 @@
 #!/bin/bash
 a=10
-b=5
 
-if [ $a -lt $b ]
+
+if [ $a -lt 10 ]
 then
-    echo "print $a is less than $b" 
+    echo "$a is less than 10" 
 else
-    echo "$a is greater than $b"
+    echo "$a is greater than 10"
 fi
