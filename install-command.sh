@@ -10,11 +10,12 @@ else
      echo "you are running with root access"
 fi
 
-dnf install mysql -y
+dnf install mysqlhjfjsdy -y
 
 if [ $? -eq 0 ]
 then 
-    echo "installation is ... success"
+    echo "installation nysql is ... success"
 else
-    echo "installation is ... failure"
+    echo "installation mysql is ... failure"
+    exit 1
 fi
